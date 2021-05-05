@@ -14,7 +14,7 @@ bgImageStyle: { height: "100vh" }
 #   }
 isShowTitleInHome: false
 actionText: About Me
-actionLink: /views/personalInfo/
+actionLink: /views/
 # features:
 #   - title: Who am I？
 #     details: A programmer? A human being? Or a matter combination?

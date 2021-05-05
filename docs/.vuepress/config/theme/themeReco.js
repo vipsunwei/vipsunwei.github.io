@@ -13,7 +13,14 @@ module.exports = {
     socialLinks: [
       // 信息栏展示社交信息
       { icon: "reco-github", link: "https://github.com/vipsunwei" },
-      { icon: "reco-zhihu", link: "https://www.zhihu.com/people/vipsunwei" },
+      {
+        icon: "reco-zhihu",
+        link: "https://www.zhihu.com/people/vipsunwei/posts",
+      },
+      {
+        icon: "reco-juejin",
+        link: "https://juejin.cn/user/2488950054463677/posts",
+      },
     ],
   },
   // 最后更新时间
