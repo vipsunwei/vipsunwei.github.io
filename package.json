@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "vipsunwei's blog",
   "main": "index.js",
-  "repository": "https://github.com/vipsunwei/blog.git",
+  "repository": "https://github.com/vipsunwei/vipsunwei.github.io.git",
   "author": "vipsunwei",
   "license": "MIT",
   "scripts": {

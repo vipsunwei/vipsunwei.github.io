@@ -10,4 +10,4 @@ sticky: 1
 
 这是我的 [`博客地址`](https://vipsunwei.com/)
 
-这是我在 GitHub Pages 上的 [`博客地址`](https://vipsunwei.github.io/blog/)
+这是我在 GitHub Pages 上的 [`博客地址`](https://vipsunwei.github.io/)
