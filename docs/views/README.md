@@ -1,6 +1,6 @@
 ---
 title: 欢迎来到我的博客
-date: 2021-05-05
+date: 2021-05-05 12:00:00
 sidebar: false
 sticky: 1
 ---
