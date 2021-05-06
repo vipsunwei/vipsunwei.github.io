@@ -10,7 +10,6 @@ on:
 
 jobs:
   build-and-deploy:
-    TZ: Asia/Shanghai
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,8 +34,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
+        env:
+          TZ: Asia/Shanghai
         run: npm run build
       - name: Deploy
+        env:
+          TZ: Asia/Shanghai
         uses: JamesIves/github-pages-deploy-action@4.1.1
         # uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
