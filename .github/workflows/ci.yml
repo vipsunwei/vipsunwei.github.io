@@ -4,10 +4,11 @@ on:
   push:
     branchs:
       - main
-  # pull_request:
-  #   branchs:
-  #     - main
-
+  pull_request:
+    branchs:
+      - main
+env:
+  TZ: Asia/Shanghai
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
