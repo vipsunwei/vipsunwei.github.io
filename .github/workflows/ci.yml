@@ -7,10 +7,10 @@ on:
   pull_request:
     branchs:
       - main
-env:
-  TZ: Asia/Shanghai
+
 jobs:
   build-and-deploy:
+    TZ: Asia/Shanghai
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,7 +28,6 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
       - name: Set taobao registry
         run: |
           npm config set registry https://registry.npm.taobao.org/
