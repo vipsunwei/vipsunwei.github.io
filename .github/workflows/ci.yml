@@ -37,7 +37,7 @@ jobs:
         env:
           TZ: Asia/Shanghai
         run: npm run build
-      - name: Deploy
+      - name: Deploy github.io
         env:
           TZ: Asia/Shanghai
         uses: JamesIves/github-pages-deploy-action@4.1.1
@@ -46,10 +46,12 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: dist
-      - name: SCP deploy vipsunwei
+      - name: SCP deploy vipsunwei.com
+        env:
+          TZ: Asia/Shanghai
         uses: nogsantos/ssh-scp-deploy@v1.2.1
         with:
-          src: ./dist/*
+          src: dist/*
           host: ${{ secrets.SSH_HOST }}
           remote: ${{ secrets.SSH_DIR }}
           port: ${{ secrets.SSH_PORT }}
