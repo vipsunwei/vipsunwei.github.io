@@ -46,14 +46,14 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: dist
-      - name: SCP deploy vipsunwei.com
-        env:
-          TZ: Asia/Shanghai
-        uses: nogsantos/ssh-scp-deploy@v1.2.1
-        with:
-          src: dist/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+      # - name: SCP deploy vipsunwei.com
+      #   env:
+      #     TZ: Asia/Shanghai
+      #   uses: nogsantos/ssh-scp-deploy@v1.2.1
+      #   with:
+      #     src: dist/*
+      #     host: ${{ secrets.SSH_HOST }}
+      #     remote: ${{ secrets.SSH_DIR }}
+      #     port: ${{ secrets.SSH_PORT }}
+      #     user: ${{ secrets.SSH_USER }}
+      #     key: ${{ secrets.SSH_KEY }}
