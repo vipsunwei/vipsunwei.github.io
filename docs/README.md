@@ -1,6 +1,6 @@
 ---
 home: true
-bgImage: "/guidao.jpg"
+bgImage: "/zhaoliying.jpg"
 bgImageStyle: { height: "100vh" }
 # faceImage: "/head.png"
 # heroImage: /hero_write.png
