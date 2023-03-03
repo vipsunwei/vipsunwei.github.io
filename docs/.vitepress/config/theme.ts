@@ -22,17 +22,17 @@ export const themeConfig: DefaultTheme.Config = {
     next: "下一篇",
   },
   // 编辑链接配置
-  editLink: {
-    pattern:
-      "https://github.com/vipsunwei/vipsunwei.github.io/edit/main/docs/:path",
-    text: "不妥之处，敬请雅正",
-  },
+  // editLink: {
+  //   pattern:
+  //     "https://github.com/vipsunwei/vipsunwei.github.io/edit/main/docs/:path",
+  //   text: "不妥之处，敬请雅正",
+  // },
   // 全文搜索配置
-  algolia: {
-    appId: "DBZ0G9HBUY",
-    apiKey: "00cef480a543003d05d9808110ea5f65",
-    indexName: "vipsunwei",
-  },
+  // algolia: {
+  //   appId: "DBZ0G9HBUY",
+  //   apiKey: "00cef480a543003d05d9808110ea5f65",
+  //   indexName: "vipsunwei",
+  // },
   // 导航栏右侧社交链接配置
   socialLinks: [
     {

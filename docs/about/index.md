@@ -62,7 +62,7 @@ showComment: false
 
 ---
 
-**北斗导航探空协同观测软件** _2020-07-20 ～ 2023-07-20_
+**北斗导航探空协同观测软件** _2020-07-20 ~ 2023-07-20_
 
 该项目由状态监控、统计分析、产品服务、作业信息、帮助指导、系统管理六大块组成。  
 状态监控：利用 `Mapbox` `Mapbox-gl` 实现了实时数据状态的展示和地图交互功能，例如探空仪实时运动轨迹和探空站状态等。  
@@ -95,13 +95,13 @@ showComment: false
 
 我负责搭建项目结构，并与另一位开发人员合作，共同开发实现了整个项目，开发期间对项目代码进行不断升级和重构调整：
 
-- 将 `Webpack` 替换成 `Vite，可以大幅提高项目启动速度，缩短开发周期，提高开发效率。`
-- 将 `Vuex` 替换成 `Pinia`，可以使得类型支持更好，`Pinia` 的 `API` 相对于 `Vuex` 更加简洁和易于理解，`Pinia` 比 `Vuex` `更轻量级，Pinia` 使用 `Vue3` 的响应式 `API`，可以提供比 `Vuex` 更好的性能。
+- 将 `Webpack` 替换成 `Vite`，可以大幅提高项目启动速度，缩短开发周期，提高开发效率。
+- 将 `Vuex` 替换成 `Pinia`，可以使得类型支持更好，`Pinia` 的 `API` 相对于 `Vuex` 更加简洁和易于理解，`Pinia` 比 `Vuex` 更轻量级，`Pinia` 使用 `Vue3` 的响应式 `API`，可以提供比 `Vuex` 更好的性能。
 - 加入 `Unocss` 原子化 `Css` 工具，能够加速 `UI` 编写，使得开发效率更高，同时减少了冗余代码。
 - 定时更新项目依赖和调试优化 `Vite` 打包配置和打包脚本，可以保持使用最新版本，同时提高代码构建和部署效率。
   我对项目的持续改进和优化，也让我能够不断提高自己的技术能力和解决问题的能力。
 
-### **天通测试系统机载端** _2022-09-01 ~ 2023-03-10_
+**天通测试系统机载端** _2022-09-01 ~ 2023-03-10_
 
 天通测试系统机载端项目是一个桌面应用程序，其功能包括自动测试、拨号键盘、通话记录、通讯录、飞行状态和数据导出。我使用了多种技术和工具，例如 `Electron`、`Electron-Builder`、`Electron-Vite`、`Vite`、`Vue3`、`Vue-Router`、`Element-Plus`、`Pinia`、 `Axios` 、 `Websocket` 、 `Mitt` 、 `Unocss` 和 `Json5` 等。
 
@@ -109,7 +109,7 @@ showComment: false
 
 在组件之间实现事件通信方面，我使用了 `Mitt`，对于 `Websocket` 继承 `websocket-heartbeat-js` 类并增加 `debug` 模式、`polling` 轮训功能，可以向服务器端发送消息以询问自动任务状态。
 
-### **中国移动和飞信桌面客户端** _2016 ~ 2019_
+**中国移动和飞信桌面客户端** _2016 ~ 2019_
 
 参与中国移动和飞信桌面客户端的开发工作，该应用主要包括二人聊天、群组聊天和个人设置等功能。在项目中，我们使用了 `Electron 4` 和 `AngularJS 1.6.8` 框架，同时也依赖了 `C++` 和 `Lua` 编写的 `SDK`。此外，我们还使用了`SQLite` 数据库来存储应用程序的数据。
 
@@ -133,18 +133,14 @@ showComment: false
 
 ---
 
-个人博客：[**vipsunwei.com**](https://vipsunwei.com)
-
-知乎：[https://www.zhihu.com/people/vipsunwei/posts](https://www.zhihu.com/people/vipsunwei/posts)
-
+个人博客：[**vipsunwei.com**](https://vipsunwei.com)  
+知乎：[https://www.zhihu.com/people/vipsunwei/posts](https://www.zhihu.com/people/vipsunwei/posts)  
 掘金：[https://juejin.cn/user/2488950054463677/posts](https://juejin.cn/user/2488950054463677/posts)
 
 ## 联系我吧！
 
 ---
 
-邮箱
-
-<a href="mailto:908241555@qq.com" title="发邮件">`908241555@qq.com`</a>
+邮箱<a href="mailto:908241555@qq.com" title="发邮件">`908241555@qq.com`</a>
 
 <img width=100% src="../public/img/svg/about-footer.svg" alt="尾部图"/>
