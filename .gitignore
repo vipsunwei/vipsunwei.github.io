@@ -1,9 +1,32 @@
+# Node modules
 node_modules/
+
+# Dist files
 dist/
-deploy.sh
+lib/
+
+# Test coverage files
+coverage/
+
+# MacOS Desktop Services Store
 .DS_Store
-**/.DS_Store
-.git/
-.vscode/
-.gitlab-ci.yml
-*.local
+
+# Log files
+*.log
+
+# IDE setting files
+.idea
+.vscode
+
+# Temp files
+cache/
+.vite_opt_cache
+
+# Other files
+/src/client/shared.ts
+/src/node/shared.ts
+pnpm-global
+TODOs.md
+article-data.json
+
+**/*bak*
