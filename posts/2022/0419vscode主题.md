@@ -19,9 +19,9 @@ isComment: true
 <!-- more -->
 
 <!-- <img src="https://i.loli.net/2019/04/30/5cc7c866d4faf.jpg"> -->
-<!-- <img src="../../images/SynthWave84.jpg"> -->
+<!-- <img src="/images/SynthWave84.jpg"> -->
 
-![SynthWave84](../../images/SynthWave84.jpg)
+![SynthWave84](/images/SynthWave84.jpg)
 
 ## 安装 SynthWave '84 主题
 
@@ -82,7 +82,7 @@ isComment: true
 
 ## 启用字体连字
 
-![FiraCode](../../images/FiraCode.png)
+![FiraCode](/images/FiraCode.png)
 
 需要安装支持 `fontLigatures` 的字体， 我安装的是 `Fira Code`
 
