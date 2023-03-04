@@ -2,7 +2,7 @@
 title: TypeScript学习笔记
 description: typescript学习笔记
 aside: false
-date: 2022-09-03
+date: 2022-09-04 11:00:00
 tags:
   - typescript
 ---
@@ -10,11 +10,11 @@ tags:
 ## tips
 
 - 传递数组或者对象作为函数参数时，可以用 Readonly<> 包裹原来的类型声明，譬如 `Readonly<Array<number>>`，TypeScript 编译器会通过拒绝编译来保护这个参数不被修改。如果的确需要一个可以被修改的数组，可以通过 spread 操作 [...array] 来复制这个数组
-  - ```ts
-    function sortNumbers(array: Readonly<Array<number>>) {
-      return [...array].sort((a, b) => a - b);
-    }
-    ```
+  ```ts
+  function sortNumbers(array: Readonly<Array<number>>) {
+    return [...array].sort((a, b) => a - b);
+  }
+  ```
 - 使用 unkown 而不是 any 来标注类型尚未明确的变量。Any 告诉 TypeScript 编译器，不需要检查类型；而 unkown 则是把检查留到使用变量的时候。使用时可以通过 typeof 运算符获取到变量的实际类型，通过 as 添加上类型后就可以正常使用了
 - 使用 Records 来代替 Objects，因为可以限定键的范围。如
 
