@@ -1,6 +1,5 @@
 ---
 title: TypeScript学习笔记
-description: typescript学习笔记
 date: 2022-09-04 11:00:00
 aside: true
 tags:

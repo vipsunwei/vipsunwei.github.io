@@ -1,23 +1,22 @@
 ---
 title: React 简单优化
-description: React
 date: 2022-09-03 10:00:00
 aside: true
 tags:
   - React
 ---
 
-### 优化的原因
+## 优化的原因
 
 react 里的一个基本常识是 re-render：当一个组件里的某个状态改变的时候，他会重新渲染，也就是重新执行所有组件代码，包括它的子组件。
 
 所以会带来很多不必要的重新渲染。
 
-### useMemo
+## useMemo
 
 useMemo 的基本理念是，它允许我们在渲染之间 "记住 "一个计算值
 
-#### 使用的场景举例
+### 使用的场景举例
 
 ```tsx
 function App() {
@@ -145,11 +144,11 @@ const boxes = React.useMemo(() => {
 }, [boxWidth]);
 ```
 
-### UseCallback
+## UseCallback
 
 它跟 useMemo 是一样的，都是缓存函数，但是他缓存的不是值，而是函数；
 
-#### 使用场景举例
+### 使用场景举例
 
 MegaBoost 是一个 pure component,接受一个 callback 回调函数，只有当 callback 变化的时候才会 re-render
 
@@ -216,13 +215,13 @@ const handleMegaBoost = React.useCallback(() => {
 }, []);
 ```
 
-### 总结
+## 总结
 
 1. 组件里一些”经过复杂的逻辑计算而得到某个值“需要使用 useMemo 包裹，保证组件在 re-render 的时候不去重复计算
 2. 父子组件的场景，子组件尽量用 React.memo 包裹成 pure component，避免父组件的 re-render 导致子组件跟着一起 re-render
 3. 父子组件的场景，父组件声明变量传入子组件的时候，尽量用 useMemo 包裹，避免父组件 re-render 导致重新生成变量，而进一步导致子组件的 re-render
 4. 父子组件的场景，副组件声明 callback 传入子组件的时候，尽量使用 useCallback 包裹，避免父组件 re-render 导致重新生成 callback，而进一步导致子组件的 re-render
 
-### 引用链接
+## 引用链接
 
 [https://www.joshwcomeau.com/react/usememo-and-usecallback/#use-case-2-preserved-references](https://www.joshwcomeau.com/react/usememo-and-usecallback/#use-case-2-preserved-references)
