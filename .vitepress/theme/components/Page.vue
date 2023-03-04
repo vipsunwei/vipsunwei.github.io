@@ -20,13 +20,16 @@
   </div>
 </template>
 <script lang="ts" setup>
+import dayjs from "dayjs";
+import { onMounted, ref, reactive } from "vue";
+import ShareCard from "./ShareCard.vue";
+import { useData, withBase } from "vitepress";
+
 interface post {
   regularPath: string;
   frontMatter: object;
 }
-import { onMounted, ref, reactive } from "vue";
-import ShareCard from "./ShareCard.vue";
-import { useData, withBase } from "vitepress";
+
 const { theme } = useData();
 
 // get posts
@@ -64,67 +67,70 @@ let posts = ref([]);
 posts.value = allMap[pageCurrent.value - 1];
 
 // click pagination
-const go = (i) => {
+const go = (i: number) => {
   pageCurrent.value = i;
   posts.value = allMap[pageCurrent.value - 1];
 };
 // timestamp transform
 const transDate = (date: string) => {
-  const dateArray = date.split("-");
-  let year = dateArray[0],
-    month = ``,
-    day = dateArray[2];
-  switch (dateArray[1]) {
-    case "1":
-    case "01":
-      month = `Jan`;
-      break;
-    case "2":
-    case "02":
-      month = `Feb`;
-      break;
-    case "3":
-    case "03":
-      month = `Mar`;
-      break;
-    case "4":
-    case "04":
-      month = `Apr`;
-      break;
-    case "5":
-    case "05":
-      month = `May`;
-      break;
-    case "6":
-    case "06":
-      month = `Jun`;
-      break;
-    case "7":
-    case "07":
-      month = `Jul`;
-      break;
-    case "8":
-    case "08":
-      month = `Aug`;
-      break;
-    case "9":
-    case "09":
-      month = `Sep`;
-      break;
-    case "10":
-      month = `Oct`;
-      break;
-    case "11":
-      month = `Nov`;
-      break;
-    case "12":
-      month = `Dec`;
-      break;
-    default:
-      month = `Month`;
-  }
-  return `${month} ${day}, ${year}`;
+  return dayjs(date).format("MM/DD, YYYY");
 };
+// const transDate = (date: string) => {
+//   const dateArray = date.split("-");
+//   let year = dateArray[0],
+//     month = ``,
+//     day = dateArray[2];
+//   switch (dateArray[1]) {
+//     case "1":
+//     case "01":
+//       month = `Jan`;
+//       break;
+//     case "2":
+//     case "02":
+//       month = `Feb`;
+//       break;
+//     case "3":
+//     case "03":
+//       month = `Mar`;
+//       break;
+//     case "4":
+//     case "04":
+//       month = `Apr`;
+//       break;
+//     case "5":
+//     case "05":
+//       month = `May`;
+//       break;
+//     case "6":
+//     case "06":
+//       month = `Jun`;
+//       break;
+//     case "7":
+//     case "07":
+//       month = `Jul`;
+//       break;
+//     case "8":
+//     case "08":
+//       month = `Aug`;
+//       break;
+//     case "9":
+//     case "09":
+//       month = `Sep`;
+//       break;
+//     case "10":
+//       month = `Oct`;
+//       break;
+//     case "11":
+//       month = `Nov`;
+//       break;
+//     case "12":
+//       month = `Dec`;
+//       break;
+//     default:
+//       month = `Month`;
+//   }
+//   return `${month} ${day}, ${year}`;
+// };
 </script>
 
 <style scoped>
