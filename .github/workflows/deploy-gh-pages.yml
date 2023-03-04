@@ -58,10 +58,10 @@ jobs:
       - name: Deploy GitHub Pages
         env:
           TZ: Asia/Shanghai
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4
         # uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          # token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
           folder: ./.vitepress/dist
       # - name: SCP deploy vipsunwei.com
