@@ -30,6 +30,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          # 这个为使用 JamesIves/github-pages-deploy-action脚本所需要的配置
+          persist-credentials: false
           # 默认只拉取分支最近一次的 commit，可能会导致一些文章的 GitInfo 变量无法获取，设为 0 代表拉取所有分支所有提交
           fetch-depth: 0
       # 2.安装PNPM
