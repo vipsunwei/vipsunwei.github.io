@@ -218,11 +218,11 @@ const handleMegaBoost = React.useCallback(() => {
 
 ### 总结
 
-1. 组件里一些”经过复杂的逻辑计算而得到某个值“需要使用 Usememo 包裹，保证组件在 re-render 的时候不去重复计算
+1. 组件里一些”经过复杂的逻辑计算而得到某个值“需要使用 useMemo 包裹，保证组件在 re-render 的时候不去重复计算
 2. 父子组件的场景，子组件尽量用 React.memo 包裹成 pure component，避免父组件的 re-render 导致子组件跟着一起 re-render
 3. 父子组件的场景，父组件声明变量传入子组件的时候，尽量用 useMemo 包裹，避免父组件 re-render 导致重新生成变量，而进一步导致子组件的 re-render
 4. 父子组件的场景，副组件声明 callback 传入子组件的时候，尽量使用 useCallback 包裹，避免父组件 re-render 导致重新生成 callback，而进一步导致子组件的 re-render
 
 ### 引用链接
 
-[引用链接](https://www.joshwcomeau.com/react/usememo-and-usecallback/#use-case-2-preserved-references)
+[https://www.joshwcomeau.com/react/usememo-and-usecallback/#use-case-2-preserved-references](https://www.joshwcomeau.com/react/usememo-and-usecallback/#use-case-2-preserved-references)
