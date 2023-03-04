@@ -1,7 +1,7 @@
 ---
 title: 我的简历
-aside: false
 date: 2023-03-04 23:00:00
+aside: true
 tags:
   - 简历
 ---

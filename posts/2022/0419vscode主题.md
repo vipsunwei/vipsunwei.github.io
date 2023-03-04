@@ -1,13 +1,9 @@
 ---
 title: SynthWave '84 让代码光彩夺目的 VSCode 主题
 date: 2022-04-19 12:00:00
-aside: false
+aside: true
 tags:
   - VSCode
-categories:
-  -
-sidebar: "auto"
-isComment: true
 ---
 
 :::tip

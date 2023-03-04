@@ -10,6 +10,7 @@ specifiers:
   lottie-web: ^5.10.2
   markdown-it: ^13.0.1
   vitepress: 1.0.0-alpha.49
+  vue: ^3.2.47
 
 dependencies:
   dayjs: 1.11.7
@@ -23,6 +24,7 @@ devDependencies:
   lottie-web: 5.10.2
   markdown-it: 13.0.1
   vitepress: 1.0.0-alpha.49
+  vue: 3.2.47
 
 packages:
 

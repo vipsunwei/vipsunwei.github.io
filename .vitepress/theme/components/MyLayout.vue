@@ -2,7 +2,7 @@
   <Layout>
     <template #doc-before>
       <Title />
-      <Category />
+      <!-- <Category /> -->
     </template>
     <!-- <template #doc-after>
       <Comments />
@@ -21,7 +21,7 @@ import HomeHero from "./HomeHero.vue";
 import CopyWright from "./CopyWright.vue";
 // import Comments from "./Comments.vue";
 import Page from "./Page.vue";
-import Category from "./Category.vue";
+// import Category from "./Category.vue";
 import Title from "./Title.vue";
 </script>
 <style scoped></style>

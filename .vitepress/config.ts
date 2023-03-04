@@ -1,12 +1,13 @@
 import { getPosts, getPostLength } from "./theme/serverUtils";
-// import { buildBlogRSS } from "./theme/rss";
+import { buildBlogRSS } from "./theme/rss";
 import { defineConfigWithTheme } from "vitepress";
 
 export default async () => {
   return defineConfigWithTheme({
-    lang: "en-US",
+    vite: { server: { host: true } },
     title: "SunWei",
-    description: "Home of SunWei",
+    description: "Blogs of SunWei",
+    markdown: { lineNumbers: true },
     head: [
       [
         "link",
@@ -17,16 +18,13 @@ export default async () => {
         },
       ],
       ["meta", { name: "author", content: "SunWei" }],
-      ["meta", { property: "og:title", content: "Home" }],
-      ["meta", { property: "og:description", content: "Home of SunWei" }],
+      ["meta", { property: "og:title", content: "Blogs" }],
+      ["meta", { property: "og:description", content: "Blogs of SunWei" }],
     ],
-    // cleanUrls: "with-subfolders",
-    lastUpdated: false,
+    // cleanUrls: true,
+    lastUpdated: true,
     themeConfig: {
-      // repo: "clark-cui/homeSite",
       logo: "/svg/chinese-zodiac/dragon.svg",
-      docsDir: "/",
-      // docsBranch: "master",
       posts: await getPosts(),
       pageSize: 5,
       postLength: await getPostLength(),
@@ -49,6 +47,6 @@ export default async () => {
         },
       ],
     },
-    // buildEnd: buildBlogRSS,
+    buildEnd: buildBlogRSS,
   });
 };

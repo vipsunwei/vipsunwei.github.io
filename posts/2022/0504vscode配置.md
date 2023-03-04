@@ -1,12 +1,9 @@
 ---
 title: 我的VSCode配置
 date: 2022-05-04 21:33:00
-aside: false
+aside: true
 tags:
   - VSCode
-categories:
-  -
-sidebar: "auto"
 ---
 
 :::tip

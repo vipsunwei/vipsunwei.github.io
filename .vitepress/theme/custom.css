@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.min.css");
+@import url("https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css");
 :root {
   --vp-c-brand: #a27b5c;
   --vp-c-brand-light: #a27b5c;
@@ -7,9 +7,9 @@
   --vp-c-bg: #faf6f1;
   --vp-c-bg-alpha-with-backdrop: rgba(250, 246, 241, 0.7);
 
-  --vp-font-family-base: "LXGW WenKai Lite", "Inter var experimental",
-    "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-base: "LXGW WenKai", "Inter var experimental", "Inter var",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --vp-font-family-mono: "LXGW WenKai Mono Lite", ui-monospace, SFMono-Regular,
     "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
