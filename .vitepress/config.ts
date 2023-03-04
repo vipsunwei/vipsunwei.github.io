@@ -8,7 +8,14 @@ export default async () => {
     title: "SunWei",
     description: "Home of SunWei",
     head: [
-      ["link", { rel: "icon", type: "image/svg", href: "/horse.svg" }],
+      [
+        "link",
+        {
+          rel: "icon",
+          type: "image/svg",
+          href: "/svg/chinese-zodiac/dragon.svg",
+        },
+      ],
       ["meta", { name: "author", content: "SunWei" }],
       ["meta", { property: "og:title", content: "Home" }],
       ["meta", { property: "og:description", content: "Home of SunWei" }],
@@ -17,7 +24,7 @@ export default async () => {
     lastUpdated: false,
     themeConfig: {
       // repo: "clark-cui/homeSite",
-      logo: "/horse.svg",
+      logo: "/svg/chinese-zodiac/dragon.svg",
       docsDir: "/",
       // docsBranch: "master",
       posts: await getPosts(),
