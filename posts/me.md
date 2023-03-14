@@ -133,7 +133,7 @@ tags:
 
 ---
 
-个人博客：[**vipsunwei.com**](https://vipsunwei.com)  
+个人博客：[**vipsunwei.com**](https://vipsunwei.pages.dev)  
 知乎：[https://www.zhihu.com/people/vipsunwei/posts](https://www.zhihu.com/people/vipsunwei/posts)  
 掘金：[https://juejin.cn/user/2488950054463677/posts](https://juejin.cn/user/2488950054463677/posts)
 
