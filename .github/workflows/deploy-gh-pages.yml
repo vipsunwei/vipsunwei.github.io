@@ -48,7 +48,7 @@ jobs:
           cache: pnpm
       # 4.安装依赖
       - name: Install Dependencies
-        run: pnpm i --frozen-lockfile
+        run: pnpm i
       # 5.打包
       - name: Build
         # env:
