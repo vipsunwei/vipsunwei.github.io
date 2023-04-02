@@ -6,7 +6,9 @@ tags:
   - 简历
 ---
 
-<img width=100% src="/svg/about-repos-header.svg" alt="头部图" />
+<!-- <img width=100% src="/svg/about-repos-header.svg" alt="头部图" /> -->
+
+![头部图](/svg/about-repos-header.svg)
 
 ## 个人信息
 
@@ -143,4 +145,6 @@ tags:
 
 邮箱<a href="mailto:908241555@qq.com" title="发邮件">`908241555@qq.com`</a>
 
-<img width=100% src="/svg/about-footer.svg" alt="尾部图"/>
+<!-- <img width=100% src="/svg/about-footer.svg" alt="尾部图"/> -->
+
+![尾部图](/svg/about-footer.svg)

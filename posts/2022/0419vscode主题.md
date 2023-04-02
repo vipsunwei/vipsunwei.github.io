@@ -14,9 +14,6 @@ tags:
 
 <!-- more -->
 
-<!-- <img src="https://i.loli.net/2019/04/30/5cc7c866d4faf.jpg"> -->
-<!-- <img src="/images/SynthWave84.jpg"> -->
-
 ![SynthWave84](/images/SynthWave84.jpg)
 
 ## 安装 SynthWave '84 主题

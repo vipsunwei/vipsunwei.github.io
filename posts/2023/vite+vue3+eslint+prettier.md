@@ -9,7 +9,7 @@ tags:
   - Prettier
 ---
 
-<img width=100% src="/images/2023/eslint-prettier.png" alt="" />
+![](../../images/eslint-prettier.png)
 
 ## 项目介绍
 
@@ -309,11 +309,11 @@ docs
 
 打开`VS Code`, 在`Extensions`中搜索`ESLint`, 找到之后点击`install`, 启用`ESLint`后会寻找到项目根目录下的`.eslintrc.js`配置文件, 根据里边的规则对项目代码进行检查
 
-<img width="100%" src="/images/2023/VS%20Code%20ESLint%20extension.png" alt="" />
+![](../../images/eslint-extension.png)
 
 打开一个文件看看效果, 我这里有一个变量声明了却没有读取使用它, `ESLint`已经在编辑器中报出了红色波浪线, 证明配置已经生效了
 
-<img width="100%" src="/images/2023/eslint-no-use-vars.png" alt="" />
+![](../../images/eslint-no-use-vars.png)
 
 ## Prettier
 
@@ -386,7 +386,7 @@ npx prettier --write
 
 打开`VS Code`, 在`Extensions`中搜索`Prettier`, 找到之后点击`install`,
 
-<img width="100%" src="/images/2023/Prettier%20Formatter%20for%20Visual%20Studio%20Code.png" alt="" />
+![](../../images/prettier-formatter.png)
 
 在项目根目录添加`.vscode`文件夹并且新建一个`settings.json`文件
 
@@ -510,7 +510,7 @@ npm install eslint-plugin-prettier@latest eslint-config-prettier@latest -D
 
 **覆盖 `vue/multi-word-component-names` 规则**
 
-<img width="100%" src="/images/2023/vue:multi-word-component-names.png" alt="" />
+![](../../images/vue-multi-word-component-names.png)
 
 这个规则要求组件名称要多个单词构成, 而我们当初写的时候没有注意这一点, 现在改成本太大了, 只能把这个规则给覆盖掉
 
