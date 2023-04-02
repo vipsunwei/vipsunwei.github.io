@@ -4,7 +4,7 @@
         <title>SunWei</title>
         <link>https://vipsunwei.com/</link>
         <description>SunWei's Blog</description>
-        <lastBuildDate>Mon, 27 Mar 2023 17:35:11 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Apr 2023 08:46:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -18,8 +18,9 @@
             <title><![CDATA[我的简历]]></title>
             <link>https://vipsunwei.com/posts/me.html</link>
             <guid>https://vipsunwei.com/posts/me.html</guid>
-            <pubDate>Sat, 04 Mar 2023 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<img width=100% src="https://vipsunwei.com/svg/about-repos-header.svg" alt="头部图" />
+            <pubDate>Mon, 03 Apr 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<!-- <img width=100% src="https://vipsunwei.com/svg/about-repos-header.svg" alt="头部图" /> -->
+<p><img src="/svg/about-repos-header.svg" alt="头部图"></p>
 <h2>个人信息</h2>
 <hr>
 <p>姓名：孙伟<br>
@@ -112,7 +113,8 @@
 <h2>联系我吧！</h2>
 <hr>
 <p>邮箱<a href="mailto:908241555@qq.com" title="发邮件"><code>908241555@qq.com</code></a></p>
-<img width=100% src="/svg/about-footer.svg" alt="尾部图"/>
+<!-- <img width=100% src="/svg/about-footer.svg" alt="尾部图"/> -->
+<p><img src="/svg/about-footer.svg" alt="尾部图"></p>
 ]]></content:encoded>
             <author>908241555@qq.com (SunWei)</author>
         </item>
