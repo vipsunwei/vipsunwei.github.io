@@ -1,6 +1,6 @@
 ---
 title: Vue3+Vite项目，如何配置ESLint和Prettier实现代码规范化？
-date: 2023-03-31 18:30:00
+date: 2023-04-02 16:30:00
 aside: true
 tags:
   - Vite
