@@ -29,7 +29,7 @@ tags:
 - uno.config.js
 - postcss.config.js
 
-所以下面我将配置`ESLint`+`Prettier`来检查`src`目录中的所有文件中的代码。
+下面开始配置`ESLint`+`Prettier`来检查代码。
 
 ## ESLint
 
@@ -51,7 +51,7 @@ tags:
 
 你可以使用以下命令安装和配置 `ESLint` :
 
-```zsh
+```bash
 pnpm create @eslint/config
 # or
 npm init @eslint/config
@@ -63,7 +63,7 @@ npm init @eslint/config
 
 使用`ESLint`做什么? 我选择第三个, 检查语法, 发现问题, 强制代码风格
 
-```zsh
+```bash
 ? How would you like to use ESLint? …
   To check syntax only
   To check syntax and find problems
@@ -72,7 +72,7 @@ npm init @eslint/config
 
 项目模块类型? 我的项目使用的 `import/export` 选择第一个
 
-```zsh
+```bash
 ? What type of modules does your project use? …
 ❯ JavaScript modules (import/export)
   CommonJS (require/exports)
@@ -81,7 +81,7 @@ npm init @eslint/config
 
 项目用的啥框架? 我用`Vue.js`
 
-```zsh
+```bash
 ? Which framework does your project use? …
   React
 ❯ Vue.js
@@ -90,13 +90,13 @@ npm init @eslint/config
 
 项目中使用 `TypeScript`? 是的选择 `Yes`，我不是 `TypeScript` 选择 `No`
 
-```zsh
+```bash
 ? Does your project use TypeScript? › No / Yes
 ```
 
 代码运行环境? 我在项目中使用了 `node` 中的 `process`, 全选上
 
-```zsh
+```bash
 ? Where does your code run? …  (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ✔ Browser
 ✔ Node
@@ -104,7 +104,7 @@ npm init @eslint/config
 
 选择代码风格? 我看了一下 `popular style`，里边没有 `prettier` ，想用 `prettier` 检查并格式化代码, 我建议使用回答问题来自定义代码风格
 
-```zsh
+```bash
 ? How would you like to define a style for your project? …
   Use a popular style guide
 ❯ Answer questions about your style
@@ -112,7 +112,7 @@ npm init @eslint/config
 
 `ESLint` 的配置文件格式? 我选择 `JavaScript`, 理由是可以在 `js` 文件中写条件判断语句来根据开发或生产环境开关 `ESLint` 规则
 
-```zsh
+```bash
 ? What format do you want your config file to be in? …
 ❯ JavaScript
   YAML
@@ -121,7 +121,7 @@ npm init @eslint/config
 
 用啥缩进? 我选择`Spaces` , 默认它是`4`个空格，我们喜欢用`2`个空格, 后边生成的配置中我手动给改成`2`个空格
 
-```zsh
+```bash
 ? What style of indentation do you use? …
   Tabs
 ❯ Spaces
@@ -129,7 +129,7 @@ npm init @eslint/config
 
 字符串使用双引号还是单引号? 我们项目的小伙伴儿想用双引号, 选择`Double`
 
-```zsh
+```bash
 ? What quotes do you use for strings? …
 ❯ Double
   Single
@@ -137,7 +137,7 @@ npm init @eslint/config
 
 用哪种结束符? `Windows`是`CRLF`, `Unix`是`LF`, 我选`Unix`
 
-```zsh
+```bash
 ? What line endings do you use? …
 ❯ Unix
   Windows
@@ -145,13 +145,13 @@ npm init @eslint/config
 
 用分号吗? 我们习惯使用分号`;`，选择 `Yes` ，不喜欢写分号的朋友，请选择 `No`
 
-```zsh
+```bash
 ? Do you require semicolons? › No / Yes
 ```
 
 检查到我没有安装`ESLint`, 是否马上安装? 安装 `eslint` 和 `eslint-plugin-vue`, 选择 `Yes`
 
-```zsh
+```bash
 Local ESLint installation not found.
 The config that you've selected requires the following dependencies:
 
@@ -161,7 +161,7 @@ eslint-plugin-vue@latest eslint@latest
 
 选择您使用的包管理器? 我是 `pnpm`
 
-```zsh
+```bash
 ? Which package manager do you want to use? …
   npm
   yarn
@@ -170,7 +170,7 @@ eslint-plugin-vue@latest eslint@latest
 
 回车确认, 开始安装...
 
-```zsh
+```bash
 ✔ How would you like to use ESLint? · style
 ✔ What type of modules does your project use? · esm
 ✔ Which framework does your project use? · vue
@@ -231,7 +231,7 @@ module.exports = {
 
 1. 使用以下命令手动安装`ESLint` 和 `Vue`插件
 
-```zsh
+```bash
 pnpm add eslint@latest eslint-plugin-vue@latest -D
 # or
 npm install eslint@latest eslint-plugin-vue@latest -D
@@ -239,7 +239,7 @@ npm install eslint@latest eslint-plugin-vue@latest -D
 
 2. 项目根目录中添加一个`.eslintrc.js`配置文件
 
-```zsh
+```bash
 # Create JavaScript configuration file
 touch .eslintrc.js
 ```
@@ -274,13 +274,13 @@ module.exports = {
 
 然后在项目根目录添加`.eslintignore`文件, 忽略不想让`ESLint`检查的文件夹和文件
 
-```zsh
+```bash
 touch .eslintignore
 ```
 
 想忽略的全往里边列就行了, 举个例子 🌰:
 
-```zsh
+```bash
 *.sh
 *.md
 *.woff
@@ -335,7 +335,7 @@ docs
 
 首先,在本地安装`Prettier`
 
-```zsh
+```bash
 pnpm add prettier@latest -D
 # or
 npm install prettier@latest -D
@@ -343,14 +343,14 @@ npm install prettier@latest -D
 
 然后，创建一个空的配置文件，让编辑器和其他工具知道您正在使用`Prettier`：
 
-```zsh
+```bash
 echo {} > .prettierrc.json
 ```
 
 在配置文件中增加如下内容:
 
-```jsonc
-// .prettierrc.json 根据ESLint规则配置, 后边会说怎么解决二者规则冲突的问题
+```json
+// .prettierrc.json 规则配置, 后边将配置ESLint使用Prettier规则检查代码,以及怎么解决二者规则冲突的问题
 {
   "useTabs": false,
   "tabWidth": 2,
@@ -364,7 +364,7 @@ echo {} > .prettierrc.json
 
 (可选)接下来，创建一个`.prettierignore`文件，让`Prettier CLI`和编辑器知道不格式化哪些文件。下面是一个例子：
 
-```sh
+```bash
 # Ignore artifacts:
 build
 coverage
@@ -376,7 +376,7 @@ coverage
 
 现在，使用`Prettier`格式化所有文件：
 
-```zsh
+```bash
 npx prettier --write
 ```
 
@@ -390,7 +390,7 @@ npx prettier --write
 
 在项目根目录添加`.vscode`文件夹并且新建一个`settings.json`文件
 
-```zsh
+```bash
 # Create directory
 mkdir .vscode
 # Create settings.json file
@@ -399,7 +399,7 @@ touch .vscode/settings.json
 
 配置保存时使用`Prettier`对代码进行格式化, 在`settings.json`文件中增加如下内容:
 
-```jsonc
+```json
 // settings.json
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -419,7 +419,7 @@ touch .vscode/settings.json
 
 与`ESLint`配合使用，请安装`eslint-config-prettier`，以使`ESLint`和`Prettier`彼此配合得很好。它关闭所有不必要的或可能与`Prettier`冲突的`ESLint`规则。具体步骤如下:
 
-```zsh
+```bash
 # Install eslint-config-prettier
 pnpm add eslint-config-prettier@latest -D
 # or
@@ -429,14 +429,10 @@ npm install eslint-config-prettier@latest -D
 修改`.eslintrc.js`
 
 ```js
-// 在 extends 尾部加入 prettier 即可
-{
-  "extends": [
-    "eslint:recommended",
-    "plugin:vue/vue3-essential",
-    "prettier"
-  ]
-}
+module.exports = {
+  // 在 extends 尾部加入 prettier 即可
+  extends: ["eslint:recommended", "plugin:vue/vue3-essential", "prettier"],
+};
 ```
 
 但是以上做法只是关闭了与`Prettier`相冲突的`ESLint`的规则, 而我们的目标是要让`ESLint`使用`Prettier`的规则去检查代码语法和风格等问题, 有办法, `prettier`官方有个插件`eslint-plugin-prettier`, 使用这个插件一步简单的配置就搞定:
@@ -445,37 +441,37 @@ npm install eslint-config-prettier@latest -D
 
 1. 安装`eslint-plugin-prettier`和`eslint-config-prettier`
 
-```zsh
+```bash
 pnpm add eslint-plugin-prettier@latest eslint-config-prettier@latest -D
 # or
 npm install eslint-plugin-prettier@latest eslint-config-prettier@latest -D
 ```
 
-2. 您需要在`.eslintrc.json`中添加`plugin:prettier/recommended`作为最后一个扩展：
+2. 您需要在`.eslintrc.js`中添加`plugin:prettier/recommended`作为最后一个扩展：
 
 ```js
-// 在 extends 尾部增加 plugin:prettier/recommended
-{
+module.exports = {
+  // 在 extends 尾部增加 plugin:prettier/recommended
   extends: [
     "eslint:recommended",
     "plugin:vue/vue3-essential",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
-}
+};
 ```
 
 `plugin:prettier/recommended`做了什么？额，它相当于以下配置：
 
 ```js
-{
+module.exports = {
   extends: ["prettier"],
   plugins: ["prettier"],
   rules: {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off"
-  }
-}
+    "prefer-arrow-callback": "off",
+  },
+};
 ```
 
 [eslint-plugin-prettier 参考资料](https://github.com/prettier/eslint-plugin-prettier)
@@ -483,29 +479,31 @@ npm install eslint-plugin-prettier@latest eslint-config-prettier@latest -D
 总之, 我们安装了`eslint-config-prettier`和`eslint-plugin-prettier`后, 修改一下`.eslintrc.js`就可以让`ESLint`和`Prettier`配合工作了
 
 ```js
-// 在 extends 尾部增加 plugin:prettier/recommended
-{
+module.exports = {
+  // 在 extends 尾部增加 plugin:prettier/recommended
   extends: [
     "eslint:recommended",
     "plugin:vue/vue3-essential",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
-}
+};
 ```
 
 如需最新资讯请参考[`Prettier`官网](https://prettier.io/)
+
+### 自定义`ESLint`规则, 与`Prettier`一致或配置符合自己喜好的规则
 
 **解决`SwitchCase`缩进规则冲突**
 
 二者缩进规则不一样, 发生了冲突, 使用如下配置解决
 
 ```js
-// 修改 .eslintrc.js 文件
-{
+module.exports = {
+  // 修改 .eslintrc.js 文件
   rules: {
     indent: ["error", 2, { SwitchCase: 1 }],
-  }
-}
+  },
+};
 ```
 
 **覆盖 `vue/multi-word-component-names` 规则**
@@ -515,42 +513,79 @@ npm install eslint-plugin-prettier@latest eslint-config-prettier@latest -D
 这个规则要求组件名称要多个单词构成, 而我们当初写的时候没有注意这一点, 现在改成本太大了, 只能把这个规则给覆盖掉
 
 ```js
-// .eslintrc.js 文件 overrides 部分
-{
+module.exports = {
+  // .eslintrc.js 文件 overrides 部分
   overrides: [
     {
       files: ["src/**/*.vue"],
       rules: { "vue/multi-word-component-names": "off" },
     },
   ],
-}
+};
 ```
 
 ⚙️ `This rule is included in all of "plugin:vue/vue3-essential", "plugin:vue/essential", "plugin:vue/vue3-strongly-recommended", "plugin:vue/strongly-recommended", "plugin:vue/vue3-recommended" and "plugin:vue/recommended"`.
 
 [参考资料 vue/multi-word-component-names](https://eslint.vuejs.org/rules/multi-word-component-names.html)
 
-**关掉已声明变量未使用的检查**
+**关掉一些规则**
 
 ```js
-{
+module.exports = {
   rules: {
-    "no-unused-vars": "off"
-  }
-}
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+  },
+};
 ```
 
-## 注意事项
+> 注意：修改`prettier`配置后需要重新启动`VS Code`编辑器`ESLint`才能够正常工作
+
+## 使用`vite-plugin-eslint`插件
 
 ---
 
-修改`prettier`配置后需要重新启动`VS Code`编辑器`ESLint`才能够正常工作
+使用这个插件可以在启动项目和打包代码时进行代码检查, 默认配置是如果检查有`error`类型的问题就启动或打包失败, `warn`类型的问题不影响启动和打包
+开始配置:
+
+### 安装`vite-plugin-eslint`
+
+```bash
+pnpm add vite-plugin-eslint@latest -D
+# or
+npm install vite-plugin-eslint@latest -D
+```
+
+在 `vite` 的配置文件中引入插件并配置到 `plugins` 中
+
+```js
+import { loadEnv } from "vite";
+import eslint from "vite-plugin-eslint";
+
+export default ({ command, mode }) => {
+  const env = loadEnv(mode, process.cwd());
+
+  return defineConfig({
+    plugins: [
+      // 其它插件
+      // ...
+      eslint({ lintOnStart: true, cache: false }),
+    ],
+    // 在.env.production文件中配置VITE_DROP_CONSOLE = true,
+    // 打包时自动去除console和debugger
+    esbuild: {
+      drop: env?.VITE_DROP_CONSOLE === "true" ? ["console", "debugger"] : [],
+    },
+  });
+};
+```
 
 ## 总结
 
 ---
 
-最终我的配置文件:
+### `ESLint`配置文件
 
 ```js
 // .eslintrc.js
@@ -569,6 +604,7 @@ module.exports = {
   overrides: [
     {
       files: ["src/**/*.vue"],
+      // 关闭组件名需要多个单词组成的规则
       rules: { "vue/multi-word-component-names": "off" },
     },
   ],
@@ -578,23 +614,21 @@ module.exports = {
   },
   plugins: ["vue"],
   rules: {
+    // 解决ESLint和Prettier的switch/case缩进冲突
     indent: ["error", 2, { SwitchCase: 1 }],
-    "linebreak-style": ["error", "unix"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
     "no-unused-vars": "off",
-    // 生产模式不允许使用log
-    "no-console":
-      process.env.NODE_ENV === "production"
-        ? ["error", { allow: ["error", "warn"] }]
-        : "off",
-    // 生产默认不允许使用debugger
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    // vite打包时自动去除console和debugger,所以这里直接关掉检查
+    "no-console": "off",
+    "no-debugger": "off",
+    // 允许catch空着
+    "no-empty": ["error", { allowEmptyCatch: true }],
   },
 };
 ```
 
-```jsonc
+### `Prettier`配置文件
+
+```json
 // .prettierrc.json
 
 {
@@ -608,6 +642,8 @@ module.exports = {
 }
 ```
 
+### 安装的依赖包
+
 ```json
 // package.json 中新增了如下依赖包
 {
@@ -616,11 +652,12 @@ module.exports = {
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
 
-    // ......
+    // vite插件
+    "vite-plugin-eslint": "^1.8.1"
   }
 }
 ```
 
-以上实现了`ESLint`和`Prettier`配合规范代码风格, 下一篇将带来使用`git`提交代码时, 对代码进行检查并格式化
+以上实现了`ESLint`和`Prettier`配合规范代码风格, 并在`vite`启动项目或打包时输出`error`警告和`warn`错误, 下一篇将带来使用`git`提交代码时, 对代码进行检查并格式化
