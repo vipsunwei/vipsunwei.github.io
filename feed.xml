@@ -4,7 +4,7 @@
         <title>SunWei</title>
         <link>https://vipsunwei.com/</link>
         <description>SunWei's Blog</description>
-        <lastBuildDate>Tue, 04 Apr 2023 17:35:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Apr 2023 11:52:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -18,7 +18,7 @@
             <title><![CDATA[我的简历]]></title>
             <link>https://vipsunwei.com/posts/me.html</link>
             <guid>https://vipsunwei.com/posts/me.html</guid>
-            <pubDate>Mon, 03 Apr 2023 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<!-- <img width=100% src="https://vipsunwei.com/svg/about-repos-header.svg" alt="头部图" /> -->
 <p><img src="/svg/about-repos-header.svg" alt="头部图"></p>
 <h2>个人信息</h2>

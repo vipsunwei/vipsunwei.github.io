@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vipsunwei.com/</id>
     <title>SunWei</title>
-    <updated>2023-04-04T17:35:01.071Z</updated>
+    <updated>2023-04-05T11:52:55.077Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>SunWei</name>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[我的简历]]></title>
         <id>https://vipsunwei.com/posts/me.html</id>
         <link href="https://vipsunwei.com/posts/me.html"/>
-        <updated>2023-04-03T00:00:00.000Z</updated>
+        <updated>2023-04-10T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<!-- <img width=100% src="https://vipsunwei.com/svg/about-repos-header.svg" alt="头部图" /> -->
 <p><img src="/svg/about-repos-header.svg" alt="头部图"></p>
 <h2>个人信息</h2>
