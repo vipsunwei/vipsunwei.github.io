@@ -11,13 +11,15 @@ tags:
 
 ![](../../images/eslint-prettier.png)
 
+大家好, 本文记录了最近在`Vite`+`Vue3`搭建的`JavaScript`项目中配置`ESLint`和`Prettier`来检查代码风格和格式化代码的经验, 下一篇带来为该项目添加`husky`+`lint-staged`来实现`git`提交时对代码进行检查和格式化。
+
 ## 项目介绍
 
 ---
 
-本文记录了最近在`Vite`+`Vue3`搭建的`JavaScript`项目中配置`ESLint`和`Prettier`来检查代码风格和格式化代码的经验，该项目使用的包管理器是`pnpm`，使用其他工具的朋友自己修改文中`pnpm`相关的安装命令，下一篇记录为该项目添加`husky`+`lint-staged`来实现`git`提交时对代码进行检查和格式化。
+该项目使用的包管理器是`pnpm`，使用其他工具的朋友自己修改文中`pnpm`相关的安装命令
 
-项目结构很简单：
+**项目结构**
 
 - public
 - src
@@ -47,7 +49,7 @@ tags:
 
 ### 安装 ESLint
 
-- 方式一 (快速开始)
+**方式一** (快速开始)
 
 你可以使用以下命令安装和配置 `ESLint` :
 
@@ -223,7 +225,7 @@ module.exports = {
 };
 ```
 
-- 方式二 (手动设置)
+**方式二** (手动设置)
 
 您也可以在项目中手动设置`ESLint`。
 
@@ -660,4 +662,4 @@ module.exports = {
 }
 ```
 
-以上实现了`ESLint`和`Prettier`配合规范代码风格, 并在`vite`启动项目或打包时输出`error`警告和`warn`错误, 下一篇将带来使用`git`提交代码时, 对代码进行检查并格式化
+以上实现了`ESLint`和`Prettier`配合规范代码风格, 并在`vite`启动项目或打包时输出`error`警告和`warn`错误, 下一篇将带来[Husky 和 Lint-staged 入门指南：Git 提交时自动进行代码校验和格式化](./husky+lint-staged.md)
