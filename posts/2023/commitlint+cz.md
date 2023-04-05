@@ -1,15 +1,16 @@
 ---
-title: 使用 commitlint、cz 和 husky 校验 Git 提交信息并生成 CHANGELOG
+title: 使用 commitlint、cz 和 husky 校验 Git 提交信息 release-it 自动发布并生成 CHANGELOG
 date: 2023-04-05
 aside: true
 tags:
   - commitlint
   - cz
   - husky
+  - release-it
   - changelog
 ---
 
-大家好, 我又来了, 书接上回, 在上一篇[Husky 和 Lint-staged 入门指南：Git 提交时自动进行代码校验和格式化](./husky+lint-staged.md)中描写了`git`提交代码时, 对暂存区的文件进行`lint`, 此篇将完成`git`提交时自动对提交`message`进行校验, 并使用`cz`帮助强制规范提交`message`
+大家好, 在上一篇[Husky 和 Lint-staged 入门指南：Git 提交时自动进行代码校验和格式化](./husky+lint-staged.md)中描写了`git`提交代码时, 对暂存区的文件进行`lint`, 此篇将完成`git`提交时自动对提交`message`进行校验, 并使用`cz`帮助强制规范提交`message`
 
 > Lint commit messages
 

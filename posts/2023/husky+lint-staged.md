@@ -86,4 +86,4 @@ husky - created .husky/pre-commit
 
 一行命令搞定(推荐)👍🏻
 
-下一篇[使用 commitlint、cz 和 husky 校验 Git 提交信息并生成 CHANGELOG](./commitlint+cz.md), 将带来`commitlint`检查`git`提交`message`, 使用`cz-conventional-changelog`帮助强制开发者规范`git`提交`message`, `release-it`自动更新版本号并且自动生成`CHANGELOG.md`
+下一篇[使用 commitlint、cz 和 husky 校验 Git 提交信息 release-it 自动发布并生成 CHANGELOG](./commitlint+cz.md), 将带来`commitlint`检查`git`提交`message`, 使用`cz-conventional-changelog`帮助强制开发者规范`git`提交`message`, `release-it`自动更新版本号并且自动生成`CHANGELOG.md`
